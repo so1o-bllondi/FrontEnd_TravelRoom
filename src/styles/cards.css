@@ -1,0 +1,378 @@
+/* Trip Card */
+.trip-card {
+  background: var(--color-surface-dark);
+  border-radius: var(--radius-card);
+  padding: 2rem;
+  border: 1px solid var(--color-border);
+  transition: all 0.3s ease;
+}
+
+.trip-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+}
+
+.trip-card-header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.trip-card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.trip-card-delete {
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+  color: var(--color-muted);
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.trip-card-delete:hover {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--color-danger);
+}
+
+.trip-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.trip-info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  color: var(--color-muted);
+  font-size: 0.9375rem;
+}
+
+.trip-card-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1.25rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+}
+
+.trip-stat {
+  text-align: center;
+}
+
+.trip-stat-value {
+  display: block;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  margin-bottom: 0.25rem;
+}
+
+.trip-stat-label {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--color-muted);
+}
+
+/* Place Card */
+.place-card {
+  background: var(--color-surface-dark);
+  border-radius: 16px;
+  padding: 1.75rem;
+  border: 1px solid var(--color-border);
+  transition: all 0.2s ease;
+}
+
+.place-card:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.place-card-header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.place-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.place-category-badge {
+  display: inline-block;
+  padding: 0.375rem 0.875rem;
+  background: rgba(93, 141, 238, 0.15);
+  color: var(--color-blue);
+  border-radius: 8px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+
+.place-delete-btn {
+  padding: 0.375rem;
+  background: transparent;
+  border: none;
+  color: var(--color-muted);
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.place-delete-btn:hover {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--color-danger);
+}
+
+.place-card-description {
+  color: var(--color-muted);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.place-coordinates {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-muted-dark);
+  font-size: 0.875rem;
+  margin-bottom: 1.25rem;
+}
+
+.place-card-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.place-votes {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.vote-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.875rem;
+  background: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.vote-btn:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.vote-btn-up:hover {
+  background: rgba(34, 197, 94, 0.1);
+  border-color: var(--color-success);
+  color: var(--color-success);
+}
+
+.vote-btn-down:hover {
+  background: rgba(239, 68, 68, 0.1);
+  border-color: var(--color-danger);
+  color: var(--color-danger);
+}
+
+.place-in-route {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-success);
+  font-weight: 500;
+  font-size: 0.9375rem;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: var(--color-surface-dark);
+  border-radius: var(--radius-card);
+  border: 1px solid var(--color-border);
+}
+
+.empty-state-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg);
+  border-radius: 20px;
+  border: 1px solid var(--color-border);
+  color: var(--color-muted);
+}
+
+.empty-state-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.empty-state-description {
+  color: var(--color-muted);
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* City Info Card */
+.city-info-card {
+  background: var(--color-surface-dark);
+  border-radius: var(--radius-card);
+  padding: 0;
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+}
+
+.city-info-header {
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+  padding: 1.75rem;
+  background: rgba(214, 181, 109, 0.08);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.city-info-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-accent);
+  color: var(--color-text-dark);
+  border-radius: 12px;
+}
+
+.city-info-header-text h3 {
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-muted);
+  margin-bottom: 0.25rem;
+}
+
+.city-info-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.city-info-image-wrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: var(--color-bg);
+}
+
+.city-info-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.city-info-content {
+  padding: 1.75rem;
+}
+
+.city-info-text {
+  color: var(--color-muted);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  font-size: 0.9375rem;
+}
+
+.city-info-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.city-info-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.125rem;
+  border-radius: 10px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.city-info-btn-secondary {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+}
+
+.city-info-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.city-info-btn-link {
+  background: transparent;
+  color: var(--color-blue);
+  border: 1px solid var(--color-blue);
+}
+
+.city-info-btn-link:hover {
+  background: rgba(93, 141, 238, 0.1);
+}
+
+.city-info-source-label {
+  font-size: 0.8125rem;
+  color: var(--color-muted-dark);
+  margin: 0;
+  font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .trip-card-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .place-card-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .place-votes {
+    justify-content: center;
+  }
+}

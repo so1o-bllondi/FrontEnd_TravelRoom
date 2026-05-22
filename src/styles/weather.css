@@ -1,0 +1,143 @@
+/* Weather Card */
+.weather-card {
+  background: var(--color-surface-dark);
+  border-radius: var(--radius-card);
+  padding: 2rem;
+  border: 1px solid var(--color-border);
+}
+
+.weather-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-accent);
+}
+
+.weather-header h3 {
+  font-size: 1.375rem;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.weather-location {
+  color: var(--color-muted);
+  font-size: 0.9375rem;
+  margin: 0;
+}
+
+.weather-dates {
+  margin-bottom: 1.5rem;
+  padding: 0.875rem 1rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 10px;
+  border: 1px solid var(--color-border);
+  color: var(--color-muted);
+  font-size: 0.9375rem;
+}
+
+.weather-fallback-message {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: rgba(214, 181, 109, 0.1);
+  border: 1px solid rgba(214, 181, 109, 0.2);
+  border-radius: 10px;
+}
+
+.weather-fallback-message p {
+  color: var(--color-accent);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.weather-days {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.weather-day {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 10px;
+  border: 1px solid var(--color-border);
+}
+
+.weather-day-date {
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.weather-day-condition {
+  color: var(--color-muted);
+  font-size: 0.9375rem;
+}
+
+.weather-day-temp {
+  font-weight: 600;
+  color: var(--color-blue);
+  white-space: nowrap;
+}
+
+.weather-day-precipitation {
+  grid-column: 2 / 4;
+  font-size: 0.875rem;
+  color: var(--color-muted-dark);
+  text-align: right;
+}
+
+/* Weather Loading */
+.weather-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+  gap: 1rem;
+}
+
+.weather-loading p {
+  color: var(--color-muted);
+  margin: 0;
+}
+
+/* Weather Error */
+.weather-error,
+.weather-unavailable {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+  gap: 1rem;
+}
+
+.weather-error {
+  color: var(--color-danger);
+}
+
+.weather-unavailable {
+  color: var(--color-muted);
+}
+
+.weather-error p,
+.weather-unavailable p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .weather-day {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  
+  .weather-day-precipitation {
+    grid-column: 1;
+    text-align: left;
+  }
+}

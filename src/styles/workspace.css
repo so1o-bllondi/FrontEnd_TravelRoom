@@ -1,0 +1,362 @@
+/* Trip Workspace Page */
+.trip-workspace-page {
+  padding: 2rem 0 4rem;
+}
+
+/* Trip Header Card */
+.trip-header-card {
+  background: var(--color-surface-dark);
+  border-radius: var(--radius-card);
+  padding: 2.5rem;
+  border: 1px solid var(--color-border);
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.trip-header-content {
+  flex: 1;
+}
+
+.trip-title {
+  font-size: 2.25rem;
+  font-weight: 300;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.trip-header-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.trip-info-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.625rem 1.125rem;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 10px;
+  border: 1px solid var(--color-border);
+  color: var(--color-muted);
+  font-size: 0.9375rem;
+}
+
+/* Workspace Grid */
+.workspace-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Places Section */
+.places-section {
+  margin: 3rem 0;
+}
+
+.places-section .section-title {
+  text-align: left;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+/* Trips Page */
+.trips-page {
+  padding: 2rem 0 4rem;
+}
+
+.trips-header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* Route Page */
+.route-page {
+  padding: 2rem 0 4rem;
+}
+
+.route-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0 3rem;
+}
+
+.route-header svg {
+  color: var(--color-accent);
+}
+
+.route-trip-title {
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.route-trip-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--color-muted);
+  font-size: 1rem;
+}
+
+.route-trip-info span {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.route-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.route-stat-card {
+  background: var(--color-surface-dark);
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid var(--color-border);
+  text-align: center;
+}
+
+.route-stat-value {
+  display: block;
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
+
+.route-stat-label {
+  display: block;
+  color: var(--color-muted);
+  font-size: 1.125rem;
+}
+
+.route-places-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.route-place-card {
+  display: flex;
+  gap: 2rem;
+  background: var(--color-surface-dark);
+  border-radius: 20px;
+  padding: 2rem;
+  border: 1px solid var(--color-border);
+}
+
+.route-place-number-large {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-accent);
+  color: var(--color-text-dark);
+  border-radius: 50%;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.route-place-details {
+  flex: 1;
+}
+
+.route-place-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.route-place-category {
+  display: inline-block;
+  padding: 0.375rem 0.875rem;
+  background: rgba(93, 141, 238, 0.15);
+  color: var(--color-blue);
+  border-radius: 8px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.route-place-description {
+  color: var(--color-muted);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.route-place-coordinates {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-muted-dark);
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+}
+
+.route-place-votes {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9375rem;
+  color: var(--color-muted);
+}
+
+.route-empty {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: var(--color-surface-dark);
+  border-radius: var(--radius-card);
+  border: 1px solid var(--color-border);
+}
+
+.route-empty p {
+  color: var(--color-muted);
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+}
+
+/* Route Summary */
+.route-summary {
+  background: var(--color-surface-dark);
+  border-radius: var(--radius-card);
+  padding: 2.5rem;
+  border: 1px solid var(--color-border);
+  margin: 3rem 0;
+}
+
+.route-summary-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  color: var(--color-accent);
+}
+
+.route-summary-header h3 {
+  font-size: 1.75rem;
+  color: var(--color-text);
+  flex: 1;
+}
+
+.route-count {
+  padding: 0.375rem 0.875rem;
+  background: rgba(214, 181, 109, 0.15);
+  color: var(--color-accent);
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.route-summary-empty {
+  color: var(--color-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.route-places {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.route-place-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+}
+
+.route-place-number {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-accent);
+  color: var(--color-text-dark);
+  border-radius: 50%;
+  font-weight: 600;
+}
+
+.route-place-info {
+  flex: 1;
+}
+
+.route-place-info h4 {
+  font-size: 1.125rem;
+  margin-bottom: 0.25rem;
+}
+
+.route-place-remove {
+  flex-shrink: 0;
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+  color: var(--color-muted);
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.route-place-remove:hover {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--color-danger);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .workspace-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .trip-header-card {
+    flex-direction: column;
+    align-items: start;
+    padding: 1.75rem;
+  }
+  
+  .trip-title {
+    font-size: 1.75rem;
+  }
+  
+  .trip-header-info {
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+  }
+  
+  .trips-header {
+    flex-direction: column;
+    align-items: start;
+  }
+  
+  .route-header {
+    flex-direction: column;
+    align-items: start;
+  }
+  
+  .route-place-card {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
